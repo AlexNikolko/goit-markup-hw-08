@@ -1,0 +1,82 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #2F303A;
+
+	&__container {
+			padding: 0 15px;
+			margin: 0 auto;
+	
+			@media screen and (min-width: 1200px) {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				width: 1200px;
+			}
+		}
+	
+		&__contact-accession {
+	
+			@media (min-width: 768px) and (max-width: 1199px) {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-around;
+				max-width: 780px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+	
+			@media screen and (min-width: 1200px) {
+				display: flex;
+				align-items: baseline;
+			}
+		}
+	
+		&__contact-list li:nth-child(n + 2) {
+			margin-top: 9px;
+		}
+	
+		&__contact {
+	
+			@media screen and (max-width: 1199px) {
+				text-align: center;
+				margin-bottom: 60px;
+			}
+	
+			@media screen and (min-width: 1200px) {
+				margin-right: 95px;
+			}
+		}
+	
+		&__contact-list {
+			font-style: normal;
+	
+			@media screen and (min-width: 1200px) {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+		}
+	
+		&__contact-adr,
+		&__contact-link {
+			transition: color 250ms $timing-function;
+		}
+	
+		&__contact-list &__contact-adr {
+			color: $text-wight;
+			text-decoration: none
+		}
+	
+		&__contact-list &__contact-link {
+			color: $contact-footer-color;
+			text-decoration: none
+		}
+	
+		&__contact-list &__contact-link:hover,
+		&__contact-list &__contact-link:focus,
+		&__contact-list &__contact-adr:hover,
+		&__contact-list &__contact-adr:focus {
+			color: $accent-color;
+		}
+}

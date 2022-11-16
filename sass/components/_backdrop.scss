@@ -1,0 +1,50 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: opacity 250ms $timing-function;
+
+	&.is-hidden {
+			opacity: 0;
+			pointer-events: none;
+	}
+
+	&__modal {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 528px;
+			max-height: 581px;
+			height: 100%;
+			border-radius: 4px;
+			padding: 40px;
+			overflow: hidden;
+	
+			background-color: #FFFFFF;
+	
+			@media screen and (max-width: 1199px) {
+				width: 450px;
+				max-height: 609px;
+			}
+	}
+
+	&__modal-link {
+			margin-bottom: 10px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1.15;
+			letter-spacing: 0.03em;
+			color: #212121;
+	}
+}
+
+
+
+
+
