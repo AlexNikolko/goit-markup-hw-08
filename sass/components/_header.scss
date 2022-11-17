@@ -20,7 +20,11 @@
 	&__container {
 			padding: 0 15px;
 			margin: 0 auto;
-			width: 480px;
+			width: auto;
+
+			@media screen and (max-width: 767px) {
+				max-width: 480px;
+			}
 
 			@media screen and (min-width: 768px) {
 				width: 768px;

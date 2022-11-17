@@ -89,15 +89,14 @@
 
 	@media screen and (min-width: 768px) {
 			display: none;
-		}
+	}
 
 	& .icon-cross {
 			display: none;
 	}
 
 	&.is-open .icon-cross {
-			display: block;
-	
+			display: block;	
 	}
 
 	&.is-open .icon-menu {

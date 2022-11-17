@@ -907,7 +907,12 @@ textarea {
 .header__container {
   padding: 0 15px;
   margin: 0 auto;
-  width: 480px;
+  width: auto;
+}
+@media screen and (max-width: 767px) {
+  .header__container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__container {
@@ -930,10 +935,10 @@ textarea {
   text-align: center;
 }
 .hero__overlay {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/images_1x/mobile-bg.jpg);
@@ -962,6 +967,9 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/images_1x/desktop-bg.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/images_1x/desktop-bg.jpg);
   }
@@ -1034,7 +1042,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 796px;
   padding: 0 40px;
   z-index: 998;
   background-color: #fff;
