@@ -1,5 +1,5 @@
 .menu__container {
-	display: none;
+	opacity: 0;
 
 	position: absolute;
 	top: 0;
@@ -11,10 +11,12 @@
 	padding: 0 40px;
 	z-index: 998;
 
-	background-color: #fff;	
+	background-color: #fff;
+
+	transition: opacity 250ms $timing-function;
 
 	&.is-open {
-		display: block;	
+		opacity: 1;
 	}
 }
 
