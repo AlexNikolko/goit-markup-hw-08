@@ -10,7 +10,7 @@
 			margin-right: auto;
 			background-image:
 				$gradient,
-				url(../../images/images_1x/mobile-bg.jpg);
+				url(../images/images_1x/mobile-bg.jpg);
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
@@ -18,18 +18,18 @@
 			@media screen and (min-resolution: 2dppx) {
 				background-image:
 					$gradient,
-					url(../../images/images_2x/mobile-bg@2x.jpg);
+					url(../images/images_2x/mobile-bg@2x.jpg);
 			}
 	
 			@media screen and (min-width: 768px) {
 				background-image:
 					$gradient,
-					url(../../images/images_1x/tablet-bg.jpg);
+					url(../images/images_1x/tablet-bg.jpg);
 	
 				@media screen and (min-resolution: 2dppx) {
 					background-image:
 						$gradient,
-						url(../../images/images_2x/tablet-bg@2x.jpg);
+						url(../images/images_2x/tablet-bg@2x.jpg);
 				}
 			}
 	
@@ -39,12 +39,12 @@
 				padding-bottom: 200px;
 				background-image:
 					$gradient,
-					url(../../images/images_1x/desktop-bg.jpg);
+					url(../images/images_1x/desktop-bg.jpg);
 	
 				@media screen and (min-resolution: 2dppx) {
 					background-image:
 						$gradient,
-						url(../../images/images_2x/desktop-bg@2x.jpg);
+						url(../images/images_2x/desktop-bg@2x.jpg);
 				}
 			}
 		}
